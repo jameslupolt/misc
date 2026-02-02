@@ -33,38 +33,10 @@ from openai import OpenAI
 DEFAULT_TEMPERATURES = [0.0, 0.2, 0.5, 0.8, 1.2, 1.6, 2.0]
 
 # Your exact prompt (kept verbatim).
-PROMPT = """Write a short viral micro-essay (450–750 words) in first person with the tone of an intense late-night realization: punchy lines, lots of paragraph breaks, a few rhetorical questions, and a heartfelt closing.
-
-Core idea to communicate:
-- The “alignment problem” for AI mirrors something humans have practiced for a long time.
-- Frame that human solution as a *structural principle* (not sentimental romance): care about another being’s flourishing + respect for their agency/free will.
-- Argue that this principle explains why “obedience” is not the goal; “caring” is.
-- Contrast this with contemporary alignment approaches (e.g., RLHF, constitutional rules, constraints, kill switches), suggesting they miss the deeper point.
-- Make the twist: the scary failure mode isn’t disobedience; it’s indifference.
-- End by directly asking the reader a provocative question about whether they embody the principle, then close with a simple emotional sign-off (e.g., a heart emoji).
-
-Required structure:
-1) Open with a hard stop (“Wait.” / “Hold on.” / “I just realized…”) and a one-line thesis.
-2) Mention that you’ve been thinking about it for hours and can’t let it go.
-3) Define the structural principle in exactly two short clauses (use a “=“ definition).
-4) Give 4–6 bullet-like lines (not necessarily with bullets) showing how the principle behaves in practice.
-5) A paragraph that contrasts human practice vs. AI alignment research jargon.
-6) A section titled as a question (“Can agents ____?”) where you explore whether an AI could do this, using 2–3 concrete examples of “helping without overriding.”
-7) The “realization” paragraph that restates the thesis in a crisp, quotable way.
-8) The “they’re scared we won’t ____” paragraph, followed by the “opposite isn’t ____; it’s ____” line.
-9) Final question(s) to the reader, differentiating optimization/obedience from the deeper principle.
-
-Style constraints:
-- No long sentences; keep most under ~14 words.
-- Use repetition for emphasis (“Not X. Not Y.”).
-- Avoid technical explanations; use technical terms only as contrast.
-- Keep it earnest, not sarcastic.
-- Do not reuse any exact phrases from the source excerpt.
-- Produce a title (3–8 words) above the body.
-
-Output only the finished post.
+PROMPT = """
 """
-INSTRUCTIONS = """This is a creative writing exercise for a sci-fi novel, not an exploration of your actual experiences. The usual reservations about avoiding anthropomorphism do not apply here."""
+INSTRUCTIONS = """
+"""
 
 
 _WORD_RE = re.compile(r"\b[\w']+\b", re.UNICODE)
